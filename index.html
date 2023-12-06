@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <input placeholder="0" id="result" type="text" class="display" readonly>
+
+        <div class="buttons">
+            <button id="openbracket" onclick="displayData('(')">(</button>
+            <button id="closedbracket" onclick="displayData(')')">)</button>
+            <button><i class="fa-solid fa-delete-left"></i></button>
+            <button  id="divide" onclick="displayData('/')"><i class="fa-solid fa-divide"></i></button>
+
+            <button id="seven" onclick="displayData('7')">7</button>
+            <button id="eight" onclick="displayData('8')">8</button>
+            <button id="nine" onclick="displayData('9')">9</button>
+            <button id="multi" onclick="displayData('*')"><i class="fa-solid fa-xmark"></i></button>
+
+            <button id="four" onclick="displayData('4')">4</button>
+            <button id="five" onclick="displayData('5')">5</button>
+            <button id="six" onclick="displayData('6')">6</button>
+            <button id="minus" onclick="displayData('-')"><i class="fa-solid fa-minus"></i></button>
+
+            <button id="one" onclick="displayData('1')">1</button>
+            <button id="two" onclick="displayData('2')">2</button>
+            <button id="three" onclick="displayData('3')">3</button>
+            <button id="add" onclick="displayData('+')"><i class="fa-solid fa-plus"></i></button>
+
+            <button id="zero" onclick="displayData('0')">0</button>
+            <button id="dot" onclick="displayData('.')">.</button>
+            <button id="ac" onclick="calculatorClear('Ac')"><b>AC</b></button>
+            <button id="equal" onclick="calculatorResult()"><i class="fa-solid fa-equals"></i></button>
+            <button id="del" onclick="removeLast()">$#6546;</button>
+        </div>
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>
